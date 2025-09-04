@@ -1,0 +1,83 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.hero-container {
+  text-align: center;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: #222;
+  color: white;
+  align-items: center;
+}
+
+.logo {
+  font-size: 28px;
+}
+
+.signup-btn {
+  padding: 10px 18px;
+  background-color: #00b894;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.hero-main {
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #81ecec, #74b9ff);
+  color: #2d3436;
+}
+
+.hero-main h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-main p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.get-started-btn {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #0984e3;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.features-section, .about-section {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.features-section h3, .about-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.features-section ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}
+
+.features-section li {
+  margin-bottom: 8px;
+}

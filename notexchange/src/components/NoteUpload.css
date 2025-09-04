@@ -1,0 +1,53 @@
+/* src/components/NoteUpload.css */
+.note-upload-container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 500px;
+    margin: 2rem auto;
+  }
+  
+  .note-upload-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .note-upload-message {
+    text-align: center;
+    color: #008000;
+    font-weight: bold;
+  }
+  
+  .note-upload-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .note-upload-form input[type="text"],
+  .note-upload-form textarea,
+  .note-upload-form input[type="file"] {
+    padding: 0.75rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    background-color: white;
+    color: black;
+  }
+  
+  .note-upload-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .note-upload-form button:hover {
+    background-color: #45a049;
+  }
+  

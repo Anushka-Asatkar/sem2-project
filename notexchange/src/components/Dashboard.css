@@ -1,0 +1,200 @@
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: #f4f6f8;
+  min-height: 100vh;
+  color: #333;
+}
+
+
+/* sidebar css  */
+.dashboard-content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.sidebar-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  text-align: left;
+  transition: 0.3s;
+}
+
+.sidebar-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.sidebar-btn.active {
+  background-color: #1976d2;
+  color: black;
+  font-weight: bold;
+}
+
+.main-area {
+  flex: 1;
+}
+
+
+/* Upload button css  */
+.header-right {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.upload-toggle-btn {
+  padding: 8px 16px;
+  background-color: #2196f3;
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-toggle-btn:hover {
+  background-color: #1769aa;
+}
+
+
+
+/* logout style */
+/* Add this to Dashboard.css */
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:rgb(125, 225, 237);
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+
+/* Header styling */
+/* .dashboard-header {
+  text-align: center;
+  margin-bottom: 2rem;
+} */
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  color: #1e88e5;
+  font-weight: 700;
+}
+
+/* Sections layout */
+.dashboard-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Upload and Notes section wrappers */
+.upload-area,
+.uploaded-notes-area,
+.downloaded-notes-area {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+/* Titles inside sections (if any) */
+.upload-area h2,
+.uploaded-notes-area h2,
+.downloaded-notes-area h2 {
+  margin-bottom: 1rem;
+  color: #1976d2;
+}
+
+/* Responsive layout for wider screens */
+@media (min-width: 1024px) {
+  .dashboard-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "upload uploaded"
+      "downloads downloads";
+    gap: 2rem;
+  }
+
+  .upload-area {
+    grid-area: upload;
+  }
+
+  .uploaded-notes-area {
+    grid-area: uploaded;
+  }
+
+  .downloaded-notes-area {
+    grid-area: downloads;
+  }
+}
+
+/* Buttons used in inner components */
+button {
+  padding: 0.6rem 1.2rem;
+  border: none;
+  background-color: #1976d2;
+  color: black;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+/* Optional utility classes */
+.text-center {
+  text-align: center;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}

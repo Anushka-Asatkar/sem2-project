@@ -1,0 +1,68 @@
+/* Download Notes Section */
+.download-notes {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+  }
+  
+  .download-notes h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .download-notes .notes-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .download-notes .note-item {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .download-notes .note-item h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .download-notes .note-item p {
+    color: #666;
+  }
+  
+  .download-notes .note-item .download-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .download-notes .note-item .download-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .download-notes .notes-list {
+      padding-left: 10px;
+    }
+  
+    .download-notes .note-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .download-notes .note-item .download-btn {
+      margin-top: 10px;
+    }
+  }
+  

@@ -1,0 +1,68 @@
+.notes-section {
+    background-color: #ffffff;
+    padding: 1.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+    margin: 1.5rem 0;
+  }
+  
+  .notes-section h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .note-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .note-list li {
+    background-color: #f9f9f9;
+    border-left: 4px solid #3498db;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .note-list li:hover {
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.15);
+  }
+  
+  .note-list strong {
+    display: block;
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  .note-list p {
+    margin: 0.5rem 0;
+    color: #555;
+  }
+  
+  .note-list small {
+    font-size: 0.85rem;
+    color: #888;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .notes-section {
+      padding: 1rem;
+    }
+  
+    .note-list li {
+      padding: 0.8rem;
+    }
+  
+    .notes-section h3 {
+      font-size: 1.3rem;
+    }
+  
+    .note-list strong {
+      font-size: 1rem;
+    }
+  }
+  

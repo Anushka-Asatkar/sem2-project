@@ -1,0 +1,95 @@
+.notes-section {
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.notes-section h3 {
+  font-size: 1.5rem;
+  color: #1e88e5;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.note-list li {
+  background-color: #f8f9fa;
+  border: 1px solid #e0e0e0;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.2s ease;
+}
+
+.note-list li:hover {
+  transform: translateY(-3px);
+}
+
+.note-list strong {
+  display: block;
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.note-list p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 0.8rem;
+}
+
+.note-list button {
+  padding: 0.5rem 1rem;
+  background-color: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.note-list button:hover {
+  background-color: #1565c0;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .note-list li {
+    padding: 0.8rem;
+  }
+
+  .note-list strong {
+    font-size: 1rem;
+  }
+
+  .note-list p {
+    font-size: 0.9rem;
+  }
+}
+
+.note-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #d32f2f;
+}

@@ -1,0 +1,277 @@
+/* Modal Background */
+.dialog-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Dialog Form */
+.dialog-form {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Form Title */
+.dialog-form h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Inputs */
+.dialog-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;    /* ✅ white background */
+  color: #000;               /* ✅ black text */
+  transition: border-color 0.2s;
+}
+
+.dialog-form input:focus {
+  outline: none;
+  border-color: #7b61ff;
+}
+
+/* Submit Button */
+.dialog-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #7b61ff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dialog-form button[type="submit"]:hover {
+  background-color: #634ee6;
+}
+
+/* Message Text */
+.dialog-message {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #e74c3c;
+  text-align: center;
+}
+
+/* Close Button (Top-Right ×) */
+.dialog-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.2rem;
+  color: #888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.dialog-close:hover {
+  color: #555;
+}
+
+/* Switch Form Links (Login <-> Signup) */
+.switch-form {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.switch-form span {
+  margin-right: 6px;
+}
+
+.switch-form button {
+  background: none;
+  color: #7b61ff;
+  border: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.switch-form button:hover {
+  color: #5c48cc;
+  text-decoration: underline;
+}
+
+/* Switch Link (Login <-> Signup) */
+.switch-link {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.switch-btn {
+  color: #7b61ff;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: underline;
+  margin-left: 4px;
+}
+
+.switch-btn:hover {
+  color: #5c48cc;
+}
+
+
+
+
+
+/* Modal Background */
+.dialog-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Dialog Form */
+.dialog-form {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', sans-serif;
+  animation: fadeInScale 0.3s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Form Title */
+.dialog-form h2 {
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+/* Inputs */
+.dialog-form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #000;
+  transition: border-color 0.2s;
+}
+
+.dialog-form input:focus {
+  outline: none;
+  border-color: #7b61ff;
+}
+
+/* Submit Button */
+.dialog-form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #7b61ff;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dialog-form button[type="submit"]:hover {
+  background-color: #634ee6;
+}
+
+/* Message Text */
+.dialog-message {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #e74c3c;
+  text-align: center;
+}
+
+/* Close Button (Top-Right ×) */
+.dialog-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  font-size: 1.5rem;
+  color: #888;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.dialog-close:hover {
+  color: #555;
+}
+
+/* Switch Form Link (Login <-> Signup) */
+.switch-link {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  text-align: center;
+  color: #555;
+}
+
+.switch-btn {
+  color: #7b61ff;
+  cursor: pointer;
+  font-weight: 500;
+  margin-left: 5px;
+  transition: color 0.2s ease;
+}
+
+.switch-btn:hover {
+  color: #5c48cc;
+  text-decoration: underline;
+}
